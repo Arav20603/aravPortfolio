@@ -1,0 +1,29 @@
+@media screen and (max-width:1200px) {
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    margin-left: 0;
+    width: 100%;
+    border: none;
+  }
+  .left h1 {
+    font-size: 40px;
+  }
+  .left-text4 {
+    font-size: 20px;
+  }
+  .right img{ 
+    width: 300px;
+    height: 300px;
+    /* border-radius: 100%; */
+    margin-left: 80px;
+    margin-top: 170px;
+    margin-bottom: 20px;
+  }
+  .left a {
+    padding: 10px;
+  }
+}
