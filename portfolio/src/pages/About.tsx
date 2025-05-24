@@ -8,7 +8,7 @@ const About = () => {
 
       {/* left img part */}
       <div className="">
-        <img src={images.profPic3} alt="ProfessionalPic2" className="w-230 rounded-3xl" />
+        <img src={images.profPic3} alt="ProfessionalPic2" className="w-230 rounded-3xl shadow-2xl shadow-blue-500" />
       </div>
 
       {/* Right content part */}

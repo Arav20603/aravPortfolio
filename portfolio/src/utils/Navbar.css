@@ -1,21 +1,32 @@
 .menu-icon {
   display: none;
 }
-@media screen and (max-width:940px) {
+@media (min-width:750px) and (max-width:950px) {
+  .nav-link {
+    gap: 1.5rem;
+  }
+  .nav-bar {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width:750px) {
   .nav .nav-link {
     display: none;
   }
   .menu-icon {
     display: block;
-  }
-  .nav nav {
-    margin-left: 10px;
     margin-right: 10px;
   }
+  
   .link-icon {
     display: none;
   }
   .nav-last {
     display: none;
+  }
+  .nav-bar {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

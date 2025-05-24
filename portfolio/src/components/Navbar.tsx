@@ -5,11 +5,11 @@ import '../utils/Navbar.css'
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState<String>('home')
-  const [isMenuOpen, setIsMenuOpen] = useState(false);``
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className='nav text-white sticky top-0 z-999 bg-black/100 backdrop-blur-2xl'>
-      <nav className='flex flex-row items-center justify-between mx-13 border-b-4 rounded-b-2xl border-blue-800'>
+      <nav className='nav-bar flex flex-row items-center justify-between mx-13 border-b-4 rounded-b-2xl border-blue-800'>
         {/* logo */}
         <a href="#"><img src={images.logo} alt="Logo" className='w-20 ml-3 rounded-b-2xl' /></a>
 
