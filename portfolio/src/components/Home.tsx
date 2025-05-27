@@ -1,5 +1,6 @@
 import About from '../pages/About'
 import Hero from '../pages/Hero'
+import Skills from '../pages/Skills'
 import Navbar from './Navbar'
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
     </>
   )
 }

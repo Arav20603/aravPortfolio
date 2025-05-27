@@ -4,6 +4,15 @@ import profPic1 from '../assets/images/arav-prof-02.jpg';
 import profPic2 from '../assets/images/arav-prof-03.jpg';
 import profPic3 from '../assets/images/arav-prof-04.jpg';
 import profPic4 from '../assets/images/arav-prof-05.jpg';
+import cpp from '../assets/images/cpp.png';
+import py from '../assets/images/py.jpg';
+import java from '../assets/images/java.jpg';
+import native from '../assets/images/native.jpg';
+import html from '../assets/images/html.jpg';
+import css from '../assets/images/css.png';
+import js from '../assets/images/js.webp';
+import mern from '../assets/images/mern.png';
+import dsa from '../assets/images/dsa.png';
 
 export const images = {
   logo,
@@ -12,4 +21,13 @@ export const images = {
   profPic2,
   profPic3,
   profPic4,
+  html,
+  css,
+  java,
+  js,
+  py,
+  mern,
+  dsa,
+  native,
+  cpp,
 };

@@ -3,7 +3,7 @@ import '../utils/Hero.css'
 
 const Hero = () => {
   return (
-    <div className="hero text-white poppins-regular mt-25 h-135 flex gap-10 justify-between">
+    <div className="hero text-white poppins-regular mt-25 h-135 flex gap-10 self-center justify-between">
       {/* Hero section */}
 
       {/* Left text part */}

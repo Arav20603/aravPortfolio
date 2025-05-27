@@ -21,7 +21,7 @@ const Navbar = () => {
           <a href="#about" onClick={() => setActiveLink('about')} className={`${activeLink == 'about' ? 'text-blue-400 border-b-2' : 'hover:text-blue-400 hover:border-b-2'} transition-all delay-75 duration-200 rounded-b-sm border-blue-400 hover:scale-103`}>
             <li>About</li>
           </a>
-          <a href="#" onClick={() => setActiveLink('skills')} className={`${activeLink == 'skills' ? 'text-blue-400 border-b-2' : 'hover:text-blue-400 hover:border-b-2'} transition-all delay-75 duration-200 rounded-b-sm border-blue-400 hover:scale-103`}>
+          <a href="#skills" onClick={() => setActiveLink('skills')} className={`${activeLink == 'skills' ? 'text-blue-400 border-b-2' : 'hover:text-blue-400 hover:border-b-2'} transition-all delay-75 duration-200 rounded-b-sm border-blue-400 hover:scale-103`}>
             <li>Skills</li>
           </a>
           <a href="#" onClick={() => setActiveLink('projects')} className={`${activeLink == 'projects' ? 'text-blue-400 border-b-2' : 'hover:text-blue-400 hover:border-b-2'} transition-all delay-75 duration-200 rounded-b-sm border-blue-400 hover:scale-103`}>
