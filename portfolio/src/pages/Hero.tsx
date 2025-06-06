@@ -3,8 +3,13 @@ import '../utils/Hero.css'
 
 const Hero = () => {
   return (
-    <div className="hero text-white poppins-regular mt-25 h-135 flex gap-10 self-center justify-between">
+    <div className="hero text-white poppins-regular mt-25 h-135 flex flex-row-reverse gap-10 self-center justify-between">
       {/* Hero section */}
+
+      {/* right img part */}
+      <div className="right mr-20">
+        <img src={images.profPic} alt="ProfessionalPic" className="rounded-full w-130 ring-5 ring-blue-800 shadow-2xl shadow-blue-500" />
+      </div>
 
       {/* Left text part */}
       <div className="left ml-15 w-200 flex flex-col gap-4 border-indigo-800 border-l-4 h-120 justify-center px-5">
@@ -23,10 +28,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* right img part */}
-      <div className="right mr-20">
-        <img src={images.profPic} alt="ProfessionalPic" className="rounded-full w-130 ring-5 ring-blue-800 shadow-2xl shadow-blue-500" />
-      </div>
+      
     </div>
   )
 }

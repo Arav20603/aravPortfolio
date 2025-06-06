@@ -1,6 +1,6 @@
 @media (min-width:425px) and (max-width:1200px) {
   .hero {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 425px) {
   .hero {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -63,8 +63,8 @@
     width: 220px;
     height: 220px;
     /* border-radius: 100%; */
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20%;
+    margin-right: 0px;
     padding-left: 0;
     margin-top: 50px;
     margin-bottom: 20px;
