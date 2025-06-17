@@ -13,6 +13,9 @@ import css from '../assets/images/css.png';
 import js from '../assets/images/js.webp';
 import mern from '../assets/images/mern.png';
 import dsa from '../assets/images/dsa.png';
+import hack1 from '../assets/images/hackathon.jpg';
+import hack2 from '../assets/images/hack1.jpg';
+import hack3 from '../assets/images/hack2.jpg';
 
 export const images = {
   logo,
@@ -30,4 +33,7 @@ export const images = {
   dsa,
   native,
   cpp,
+  hack1,
+  hack2,
+  hack3
 };
