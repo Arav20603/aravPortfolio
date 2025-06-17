@@ -4,7 +4,7 @@ import '../utils/Hero.css'
 
 const Hero = () => {
   return (
-    <div className="hero text-white poppins-regular mt-25 h-135 flex flex-row-reverse gap-10 self-center justify-between">
+    <div className="hero text-white poppins-regular mt-20 h-135 flex flex-row-reverse gap-10 self-center justify-between ">
       {/* Hero section */}
 
       {/* right img part */}

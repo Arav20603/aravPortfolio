@@ -57,7 +57,7 @@ const ContactForm = () => {
         >
 
           {/* Name */}
-          <div className="box-1 box flex flex-col mt-5">
+          <div className="box-1 box flex flex-col mt-5 text-indigo-100">
             <label htmlFor="name" className='text-xl poppins-regular'>Name:</label>
             <input type="text" name="name" value={name}
               placeholder='Enter your name' required
@@ -67,7 +67,7 @@ const ContactForm = () => {
           </div>
 
           {/* Email */}
-          <div className="box flex flex-col">
+          <div className="box flex flex-col text-indigo-100">
             <label htmlFor="email" className='text-xl poppins-regular'>Email:</label>
             <input type="email" name='email'
               placeholder='Enter your email' required value={email}
@@ -77,7 +77,7 @@ const ContactForm = () => {
           </div>
 
           {/* TextArea */}
-          <div className="box flex flex-col">
+          <div className="box flex flex-col text-indigo-100">
             <label htmlFor="msg" className='text-xl poppins-regular'>Your Message:</label>
             <textarea name="msg" id=""
               placeholder='Enter your message' required value={text}

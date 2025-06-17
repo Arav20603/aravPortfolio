@@ -1,4 +1,4 @@
-@media (min-width:425px) and (max-width:1200px) {
+@media (min-width:603px) and (max-width:1200px) {
   .hero {
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,7 @@
     height: 300px;
     /* border-radius: 100%; */
     margin-left: 60px;
-    margin-top: 160px;
+    margin-top: 6rem;
     margin-bottom: 20px;
   }
   .left a {
@@ -37,6 +37,47 @@
     margin-left: 0;
   }
 }
+
+@media (min-width:425px) and (max-width:603px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    margin-left: 0;
+    width: 100%;
+    border: none;
+    align-items: center;
+    text-align: center;
+  }
+  .left h1 {
+    font-size: 40px;  
+    width: fit-content;
+  }
+  .left-text4 {
+    font-size: 20px;
+  }
+  .right img{ 
+    width: 300px;
+    height: 300px;
+    /* border-radius: 100%; */
+    margin-left: 60px;
+    margin-top: 12rem;
+    margin-bottom: 20px;
+  }
+  .left a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .text  {
+    margin-left: 0;
+  }
+  .btn {
+    margin-left: 0;
+  }
+}
+
 
 @media screen and (max-width: 425px) {
   .hero {
@@ -66,7 +107,7 @@
     margin-left: 20%;
     margin-right: 0px;
     padding-left: 0;
-    margin-top: 50px;
+    margin-top: 5px;
     margin-bottom: 20px;
   }
   .left a {

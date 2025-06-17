@@ -4,6 +4,7 @@ import gitHub from '../assets/icons/github.png';
 import gitHub2 from '../assets/icons/github2.png';
 import menu from '../assets/icons/hamburger.png';
 import paws from '../assets/icons/paws.png';
+import x from '../assets/icons/social.png';
 
 export const icons = {
   linkedIn,
@@ -12,4 +13,5 @@ export const icons = {
   gitHub2,
   menu,
   paws,
+  x
 };
