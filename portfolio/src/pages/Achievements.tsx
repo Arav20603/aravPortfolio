@@ -4,7 +4,7 @@ import '../utils/Achievements.css'
 
 const Achievements = () => {
   return (
-    <div id='achievements' className='text-white mt-25 bg-blue-500/20 pt-20 pb-10'>
+    <div id='achievements' className='text-white mt-25 bg-blue-500/20 pt-20 pb-18'>
       <div className="achievements-container ml-20">
         <h1 className='text-5xl poppins-bold mb-8 underline text-indigo-200'>Achievements</h1>
 
