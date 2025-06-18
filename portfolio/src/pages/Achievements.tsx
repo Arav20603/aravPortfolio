@@ -21,7 +21,7 @@ const Achievements = () => {
           <h2 className="text-2xl font-semibold text-indigo-100">Runner-up – GCEM Hacks 2025</h2>
           <p className="mt-2 text-[18px] text-gray-300">
             Developed <strong>FitCommunity</strong>, a fitness community-driven app that encourages healthy habits
-            through social challenges and progress tracking. Worked in a team of 4 and secured 2nd place among 50+ teams.
+            through social challenges and progress tracking. Worked in a team of 3 (<span className='font-bold'>Team - Runtime Terrors</span>) and secured 2nd place among 20+ teams.
             My role focused on front-end development.
           </p>
         </div>
