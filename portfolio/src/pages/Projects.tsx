@@ -1,6 +1,5 @@
 import React from 'react'
 import { icons } from '../constants/icons'
-import { Link } from 'react-router-dom'
 import { links } from '../constants/links'
 import '../utils/Projects.css'
 
@@ -21,9 +20,9 @@ const Projects = () => {
           <p className='poppins-regular text-indigo-200 px-4'>Manage your pet's needs with reminders, health records, and more.</p>
 
           {/* btn */}
-          <Link to={links.furEverCare} className='font-mono bg-indigo-800 px-5 mt-2 py-2 rounded-2xl mb-2 hover:bg-indigo-700
+          <a href={links.furEverCare} className='font-mono bg-indigo-800 px-5 mt-2 py-2 rounded-2xl mb-2 hover:bg-indigo-700
             transition-all delay-75 duration-200
-          '>🔗 View on GitHub</Link>
+          '>🔗 View on GitHub</a>
         </div>
 
 
@@ -37,9 +36,9 @@ const Projects = () => {
           <p className='poppins-regular text-indigo-200 px-4'>Track workouts, monitor progress, personalized workout and stay consistent.</p>
 
           {/* btn */}
-          <Link to={links.fitness} className='font-mono bg-indigo-800 px-5 mt-2 py-2 rounded-2xl mb-2 hover:bg-indigo-700
+          <a href={links.fitness} className='font-mono bg-indigo-800 px-5 mt-2 py-2 rounded-2xl mb-2 hover:bg-indigo-700
             transition-all delay-75 duration-200
-          '>🔗 View on GitHub</Link>
+          '>🔗 View on GitHub</a>
         </div>
       </div>
     </div>
