@@ -1,4 +1,5 @@
 import { images } from "../constants/images"
+import { links } from "../constants/links"
 import '../utils/Hero.css'
 
 const Hero = () => {
@@ -23,7 +24,7 @@ const Hero = () => {
 
         {/* btn - section */}
         <div className="btn flex gap-10 mt-3 font-semibold ml-5">
-          <a href="#" className="p-2 bg-blue-700 px-7 text-center rounded-xl hover:bg-blue-800 transition-all delay-75 duration-200">View Resume</a>
+          <a href={links.CV} className="p-2 bg-blue-700 px-7 text-center rounded-xl hover:bg-blue-800 transition-all delay-75 duration-200">View Resume</a>
           <a href="#contact" className="p-2 bg-indigo-800 px-7 text-center rounded-xl hover:bg-indigo-900 transition-all delay-75 duration-200">Contact Me</a>
         </div>
       </div>
