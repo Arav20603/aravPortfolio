@@ -1,0 +1,2 @@
+Deploy Command:
+  npx netlify deploy --prod --dir=dist
