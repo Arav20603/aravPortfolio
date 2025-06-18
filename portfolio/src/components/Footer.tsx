@@ -1,4 +1,3 @@
-import React from 'react'
 import '../utils/Footer.css'
 import { images } from '../constants/images'
 import { icons } from '../constants/icons'
