@@ -61,7 +61,7 @@ const ContactForm = () => {
             <label htmlFor="name" className='text-xl poppins-regular'>Name:</label>
             <input type="text" name="name" value={name}
               placeholder='Enter your name' required
-              className='bg-blue-600/30 p-2 w-110 mt-4 rounded-xl ml-3'
+              className='bg-blue-600/30 p-2 w-110 mt-4 rounded-xl ml-3 pl-4'
               onChange={(e) => setName(e.target.value)}
             />
           </div>
@@ -71,7 +71,7 @@ const ContactForm = () => {
             <label htmlFor="email" className='text-xl poppins-regular'>Email:</label>
             <input type="email" name='email'
               placeholder='Enter your email' required value={email}
-              className='bg-blue-600/30 p-2 w-110 mt-4 rounded-xl ml-3'
+              className='bg-blue-600/30 p-2 w-110 mt-4 rounded-xl ml-3 pl-4'
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -81,7 +81,7 @@ const ContactForm = () => {
             <label htmlFor="msg" className='text-xl poppins-regular'>Your Message:</label>
             <textarea name="msg" id=""
               placeholder='Enter your message' required value={text}
-              className='bg-blue-600/30 p-2 w-110 mt-4 rounded-xl ml-3 h-20'
+              className='bg-blue-600/30 p-2 w-110 mt-4 rounded-xl ml-3 h-20 pl-4'
               onChange={(e) => setText(e.target.value)}
             ></textarea>
           </div>
