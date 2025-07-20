@@ -25,7 +25,7 @@ const About = () => {
           <p className="mt-4">When I’m not coding, I’m probably learning something new or rewriting a function I just wrote.</p>
           <p>I’m excited to grow through internships and team projects, and I love building things
              that people actually use. Always learning, always improving — and always up for a good challenge.</p>
-          <p className="mt-6 text-right">- Let’s create something <span className="text-blue-400">awesome</span>.</p>
+          <p className="mt-6 text-right">- I enjoy solving problems and making things <span className="text-blue-400">better</span>.</p>
         </div>
       </div>
     </div>
