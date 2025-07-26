@@ -1,6 +1,6 @@
 # 🚀 My Portfolio Website
 
-Welcome to my personal portfolio website! This site is a reflection of my journey as a **Pre - Final Year Student**, featuring my projects, skills, and ways to connect with me.
+Welcome to my personal portfolio website! This site is a reflection of my journey as a **Final Year Student**, featuring my projects, skills, and ways to connect with me.
 
 Live here 👉 [**Aravind's Portfolio**](https://syndicatefolio.netlify.app/)
 
