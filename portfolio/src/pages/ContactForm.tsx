@@ -10,7 +10,7 @@ const ContactForm = () => {
   
 
   const handleSubmit = async (e:any) => {
-    e.preventDefault(); // ✅ Prevent page reload
+    e.preventDefault();
 
     if (!name || !email || !text) {
       toast.error('Please fill in all fields');
@@ -34,7 +34,7 @@ const ContactForm = () => {
       });
 
       if (response.ok) {
-        toast.success("Message sent successfully! 🚀 Thanks for contacting use, we'll get back to you soon 😇");
+        toast.success("Message sent successfully! 🚀 Thanks for contacting us, we'll get back to you soon 😇");
         setName('');
         setEmail('');
         setText('');
