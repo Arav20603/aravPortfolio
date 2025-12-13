@@ -3,10 +3,10 @@ import '../utils/Projects.css'
 
 const projectsData = [
   {
-    title: 'FurEverCare – A Pet Care Companion',
-    tech: 'React Native • Firebase',
-    description: "Manage your pet's needs with reminders, health records, and more.",
-    link: links.furEverCare,
+    title: 'RideEase – A Multi-modal Ride Booking app',
+    tech: 'React Native with Expo • Node.js • Express • MongoDB',
+    description: "Book multiple rides with adding ride segments.(Cab, Auto, Bike, Metro)",
+    link: links.rideEaseUser,
   },
   {
     title: 'FitCommunity – Fitness Progress Tracker',

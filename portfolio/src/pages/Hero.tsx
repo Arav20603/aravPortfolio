@@ -17,7 +17,7 @@ const Hero = () => {
         <p className="mb-1 name text-blue-200 text-sm ml-4">Hi, my name is</p>
         <h1 className="text-7xl ml-3 mb-1 font-semibold text-blue-600 name">Aravind Dakshan D.</h1>
         <p className="ml-4 mb-5 text-md text-blue-200">Final Year CSE Student @ <span className="text-blue-400 font-semibold">Gopalan College of Engineering & Management</span></p>
-        <p className="text text-3xl mb-4 ml-2 text-blue-400 left-text4">MERN Stack Developer | React Native Enthusiast | Problem Solver</p>
+        <p className="text text-3xl mb-4 ml-2 text-blue-400 left-text4">MERN Stack Developer | React Native</p>
         <p className="text text-xl/8 ml-2 text-blue-200">Passionate about building web and mobile applications, 
         skilled in Java, C/C++, Python, and full-stack development.
         </p>
