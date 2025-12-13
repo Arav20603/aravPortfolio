@@ -1,0 +1,81 @@
+@media (min-width:540px) and (max-width:800px) {
+  #achievements h1 {
+    font-size: 40px;
+  }
+  .achievements-container {
+    margin-left: 40px;
+  }
+  .slider-container {
+    width: 400px;
+    height: 250px;
+  }
+  .slider-box {
+    width: 1200px;
+    height: 100%;
+  }
+  .slider-box img {
+    width: 400px;
+    height: 250px;
+  }
+  #achievements h2 {
+    font-size: 20px;
+  }
+  #achievements p {
+    font-size: 15px;
+  }
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-400px); }
+    66% { transform: translateX(-800px); }
+    100% { transform: translateX(0); }
+  }
+  #achievements .details {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  #achievements h1 {
+    font-size: 30px;
+  }
+  #achievements {
+    padding-top: 40px;
+    margin-top: 30px;
+  }
+  .achievements-container {
+    margin-left: 20px;
+  }
+  .slider-container {
+    width: 250px;
+    height: 150px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .slider-box {
+    width: 750px;
+    height: 100%;
+  }
+  .slider-box img {
+    width: 250px;
+    height: 150px;
+  }
+  #achievements h2 {
+    font-size: 15px;
+  }
+  #achievements p {
+    font-size: 10px;
+  }
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-250px); }
+    66% { transform: translateX(-500px); }
+    100% { transform: translateX(0); }
+  }
+  #achievements .details {
+    width: fit-content;
+    margin-left: 0;
+    padding: 10px;
+    text-align: justify;
+    margin-right: 5px;
+  }
+}

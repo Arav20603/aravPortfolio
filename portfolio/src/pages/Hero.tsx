@@ -1,31 +1,30 @@
 import { images } from "../constants/images"
-import '../utils/Hero.css'
 
 const Hero = () => {
   return (
-    <div className="hero text-white poppins-regular mt-25 h-135 flex gap-10 justify-between">
+    <div className="text-white poppins-regular mt-20">
       {/* Hero section */}
 
       {/* Left text part */}
-      <div className="left ml-15 w-200 flex flex-col gap-4 border-indigo-800 border-l-4 h-120 justify-center px-5">
-        <p className="mb-1 name text-blue-200 text-sm ml-4">Hi, my name is</p>
-        <h1 className="text-7xl ml-3 mb-1 font-semibold text-blue-600 name">Aravind Dakshan D.</h1>
-        <p className="ml-4 mb-5 text-md text-blue-200">Pre-final Year CSE Student @ <span className="text-blue-400 font-semibold">Gopalan College of Engineering & Management</span></p>
-        <p className="text text-3xl mb-4 ml-2 text-blue-400 left-text4">MERN Stack Developer | React Native Enthusiast | Problem Solver</p>
-        <p className="text text-xl/8 ml-2 text-blue-200">Passionate about building web and mobile applications, 
+      <div className="ml-15 flex flex-col gap-3 border-rose-900 border-l-4 h-120 justify-center px-5">
+        <p className="mb-1 text-green-100">Hi, my name is</p>
+        <h1 className="text-6xl ml-3 mb-1 font-semibold">Aravind Dakshan D. <span>👋</span></h1>
+        <p className="ml-4 mb-5 text-md text-gray-400">Pre-final Year CSE Student @ <span className="text-indigo-200 font-semibold">Gopalan College of Engineering & Management</span></p>
+        <p className="text-3xl mb-4 text-purple-200">MERN Stack Developer | React Native Enthusiast <br /> | Problem Solver</p>
+        <p className="text-xl/8 w-1/2">Passionate about building web and mobile applications, 
         skilled in DSA, C++, Python, and full-stack development.
         </p>
 
         {/* btn - section */}
-        <div className="btn flex gap-10 mt-3 font-semibold ml-5">
-          <a href="#" className="p-2 bg-blue-700 px-7 text-center rounded-xl hover:bg-blue-800 transition-all delay-75 duration-200">View Resume</a>
-          <a href="#" className="p-2 bg-indigo-800 px-7 text-center rounded-xl hover:bg-indigo-900 transition-all delay-75 duration-200">Contact Me</a>
+        <div className="flex gap-10 mt-3 font-semibold ml-5">
+          <a href="#" className="p-2 bg-red-800 w-1/8 text-center rounded-xl hover:bg-red-700 transition-all delay-75 duration-200">View Resume</a>
+          <a href="#" className="p-2 bg-indigo-900 w-1/8 text-center rounded-xl hover:bg-indigo-800 transition-all delay-75 duration-200">Contact Me</a>
         </div>
       </div>
 
       {/* right img part */}
-      <div className="right mr-20">
-        <img src={images.profPic} alt="ProfessionalPic" className="rounded-full w-130 ring-5 ring-blue-800 shadow-2xl shadow-blue-500" />
+      <div className="">
+        <img src={images.profPic} alt="ProfessionalPic" className="absolute top-40 left-230 rounded-t-[80%] rounded-b-[75%] border-10 border-red-800 bg-red-600 shadow-2xl shadow-red-600/50" />
       </div>
     </div>
   )

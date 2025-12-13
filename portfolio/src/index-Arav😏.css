@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+
+:root {
+  background-color: black;
+}
+
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.share-tech-bold {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.exo-2 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-600px); }
+  66% { transform: translateX(-1200px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-slide {
+  animation: slide 12s ease infinite;
+}
