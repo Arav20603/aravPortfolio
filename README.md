@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This site is a reflection of my journey as a **Final Year Student**, featuring my projects, skills, and ways to connect with me.
 
-Live here 👉 [**Aravind's Portfolio**](https://syndicatefolio.netlify.app/)
+Live here 👉 [**Aravind's Portfolio**](https://aravind-dakshan.netlify.app/)
 
 ---
 
