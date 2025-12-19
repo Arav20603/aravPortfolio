@@ -25,7 +25,7 @@ const Footer = () => {
 
             <p className="text-sm text-blue-300 leading-relaxed max-w-sm">
               Final Year CSE Student passionate about building clean,
-              scalable, and user-friendly web applications.
+              scalable, and user-friendly web and mobile applications.
             </p>
 
             <div className="text-sm text-blue-400 space-y-1">
