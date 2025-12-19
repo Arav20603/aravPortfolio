@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sekuya&display=swap');
 @import "tailwindcss";
-
 
 :root {
   background-color: black;
@@ -40,17 +40,12 @@
   font-style: normal;
 }
 
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
-}
-
-@keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-600px); }
-  66% { transform: translateX(-1200px); }
-  100% { transform: translateX(0); }
-}
-
-.animate-slide {
-  animation: slide 12s ease infinite;
 }

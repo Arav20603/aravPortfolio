@@ -1,37 +1,80 @@
-import { images } from "../constants/images"
-import { links } from "../constants/links"
-import '../utils/Hero.css'
+import { images } from "../constants/images";
+import { links } from "../constants/links";
 
 const Hero = () => {
   return (
-    <div className="hero text-white poppins-regular mt-20 h-135 flex flex-row-reverse gap-10 self-center justify-between ">
-      {/* Hero section */}
+    <section className="relative overflow-hidden bg-black text-white">
 
-      {/* right img part */}
-      <div className="right mr-20">
-        <img src={images.profPic} alt="ProfessionalPic" className="rounded-full w-130 ring-5 ring-blue-800 shadow-2xl shadow-blue-500" />
-      </div>
+      {/* BACKGROUND GLOW */}
+      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 -right-40 w-[400px] h-[400px] bg-indigo-600/20 rounded-full blur-[120px]" />
 
-      {/* Left text part */}
-      <div className="left ml-15 w-200 flex flex-col gap-4 border-indigo-800 border-l-4 h-120 justify-center px-5">
-        <p className="mb-1 name text-blue-200 text-sm ml-4">Hi, my name is</p>
-        <h1 className="text-7xl ml-3 mb-1 font-semibold text-blue-600 name">Aravind Dakshan D.</h1>
-        <p className="ml-4 mb-5 text-md text-blue-200">Final Year CSE Student @ <span className="text-blue-400 font-semibold">Gopalan College of Engineering & Management</span></p>
-        <p className="text text-3xl mb-4 ml-2 text-blue-400 left-text4">MERN Stack Developer | React Native</p>
-        <p className="text text-xl/8 ml-2 text-blue-200">Passionate about building web and mobile applications, 
-        skilled in Java, C/C++, Python, and full-stack development.
-        </p>
+      <div className="relative max-w-7xl mx-auto px-6 pt-10 md:pt-24 pb-32">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-16">
 
-        {/* btn - section */}
-        <div className="btn flex gap-10 mt-3 font-semibold ml-5">
-          <a href={links.CV} className="p-2 bg-blue-700 px-7 text-center rounded-xl hover:bg-blue-800 transition-all delay-75 duration-200">View Resume</a>
-          <a href="#contact" className="p-2 bg-indigo-800 px-7 text-center rounded-xl hover:bg-indigo-900 transition-all delay-75 duration-200">Contact Me</a>
+          {/* LEFT */}
+          <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
+            <span className="inline-block px-4 py-2 rounded-full bg-blue-600/20 text-blue-400 text-sm font-medium">
+              👋 Hello, I’m
+            </span>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+              Aravind <span className="text-blue-500">Dakshan</span>{" "}
+              <span className="text-blue-400">D</span>
+            </h1>
+
+            <h2 className="text-lg sm:text-xl text-gray-300">
+              Final Year{" "}
+              <span className="text-blue-400 font-semibold">
+                Computer Science Engineer
+              </span>
+            </h2>
+
+            <p className="text-gray-400 max-w-xl mx-auto md:mx-0">
+              I’m a{" "}
+              <span className="text-blue-400 font-semibold">
+                Full Stack Developer
+              </span>{" "}
+              working with MERN & React Native, with a strong interest in{" "}
+              <span className="text-blue-400 font-semibold">
+                Cybersecurity
+              </span>.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+              <a
+                href={links.CV}
+                target="_blank"
+                className="px-7 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition font-semibold shadow-lg shadow-blue-600/30"
+              >
+                View Resume
+              </a>
+
+              <a
+                href="#contact"
+                className="px-7 py-3 rounded-xl border border-blue-600 hover:bg-blue-600/10 transition font-semibold"
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="w-full md:w-1/2 flex justify-center relative">
+            <div className="absolute w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-blue-600/20 blur-3xl" />
+
+            <img
+              src={images.profPic2}
+              alt="Aravind Dakshan"
+              className="relative w-64 sm:w-72 md:w-80 rounded-3xl
+                         border border-blue-700/40
+                         shadow-xl shadow-blue-900/40"
+            />
+          </div>
         </div>
       </div>
+    </section>
+  );
+};
 
-      
-    </div>
-  )
-}
-
-export default Hero
+export default Hero;

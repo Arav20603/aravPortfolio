@@ -1,55 +1,128 @@
-import '../utils/Footer.css'
-import { images } from '../constants/images'
-import { icons } from '../constants/icons'
-import { links } from '../constants/links'
+import { images } from "../constants/images";
+import { icons } from "../constants/icons";
+import { links } from "../constants/links";
 
 const Footer = () => {
   return (
-    <div className='text-white mt-20 bg-indigo-600/30 pt-8 pb-3'>
-      <footer className="grid grid-cols-3 ml-20 gap-35">
-        {/* left-box */}
-        <div className="">
-          <div className="flex items-center gap-1 bg-blue-900 rounded-3xl pr-4 w-fit">
-            <img src={images.logo} alt="Logo" className='rounded-full w-11 logo-img' />
-            <p className='font-mono text-2xl font-bold text-indigo-50 title'>Aravind Dakshan D</p>
+    <footer className="mt-24 bg-black/80 backdrop-blur-xl border-t border-blue-900 text-blue-100">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+
+        {/* TOP SECTION */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-14">
+
+          {/* BRAND */}
+          <div className="flex flex-col gap-5">
+            <div className="flex items-center gap-3">
+              <img
+                src={images.logo}
+                alt="Logo"
+                className="w-14 rounded-xl"
+              />
+              <h2 className="text-2xl font-bold text-blue-200">
+                Aravind Dakshan D
+              </h2>
+            </div>
+
+            <p className="text-sm text-blue-300 leading-relaxed max-w-sm">
+              Final Year CSE Student passionate about building clean,
+              scalable, and user-friendly web applications.
+            </p>
+
+            <div className="text-sm text-blue-400 space-y-1">
+              <p>📍 Whitefield, Bangalore</p>
+              <p>📧 dakshandaravind@gmail.com</p>
+              <p>📞 8088276220</p>
+            </div>
           </div>
-          <div className="ml-8 mt-3 share-tech-regular text-indigo-100 address">
-            <p>Whitefield, Bangalore - 560067</p>
-            <p><span>Email:</span> dakshandaravind@gmail.com</p>
-            <p><span>Mobile:</span> 8088276220</p>
+
+          {/* QUICK LINKS */}
+          <div>
+            <h3 className="text-lg font-semibold text-blue-300 mb-6">
+              Quick Links
+            </h3>
+
+            <ul className="space-y-3 text-sm">
+              <li>
+                <a href="#" className="hover:text-blue-400 transition">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="hover:text-blue-400 transition">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#skills" className="hover:text-blue-400 transition">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="hover:text-blue-400 transition">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#achievements" className="hover:text-blue-400 transition">
+                  Achievements
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* SOCIALS */}
+          <div>
+            <h3 className="text-lg font-semibold text-blue-300 mb-6">
+              Connect With Me
+            </h3>
+
+            <div className="flex gap-6">
+              <a href={links.gitHub} target="_blank">
+                <img
+                  src={icons.gitHub}
+                  alt="GitHub"
+                  className="w-10 hover:scale-110 transition"
+                />
+              </a>
+              <a href={links.linkedIn} target="_blank">
+                <img
+                  src={icons.linkedIn}
+                  alt="LinkedIn"
+                  className="w-9 hover:scale-110 transition"
+                />
+              </a>
+              <a href={links.X} target="_blank">
+                <img
+                  src={icons.x}
+                  alt="X"
+                  className="w-9 hover:scale-110 transition"
+                />
+              </a>
+            </div>
+
+            <p className="text-xs text-blue-400 mt-6 max-w-xs">
+              Feel free to reach out for collaboration, internships, or
+              exciting opportunities.
+            </p>
           </div>
         </div>
 
-        {/* right-box */}
-        <div className="right-box flex gap-10 mt-2">
-          <p className='text-xl poppins-regular border-b-2 border-indigo-500 h-fit w-fit text-indigo-300 heading'>Quick Access</p>
-            <div className="flex flex-col gap-2 mt-5 text-indigo-50 heading-right-box">
-              <a href="#" className='hover:underline transition-all delay-75 duration-200'>Home</a>
-              <a href="#about" className='hover:underline transition-all delay-75 duration-200'>About</a>
-              <a href="#skills" className='hover:underline transition-all delay-75 duration-200'>Skills</a>
-            </div>
-            <div className="flex flex-col gap-2 mt-5 text-indigo-50 heading-left-box">
-              <a href="#projects" className='hover:underline transition-all delay-75 duration-200'>Projects</a>
-              <a href="#achievements" className='hover:underline transition-all delay-75 duration-200'>Achivements</a>
-            </div>
+        {/* DIVIDER */}
+        <div className="border-t border-blue-900 my-10" />
+
+        {/* BOTTOM */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-blue-400">
+          <p>
+            © {new Date().getFullYear()} Aravind Dakshan D. All rights reserved.
+          </p>
+
+          <p className="opacity-70">
+            Built with ❤️ using React & Tailwind CSS
+          </p>
         </div>
+      </div>
+    </footer>
+  );
+};
 
-        {/* links */}
-          <div className="flex mt-2 link-box">
-            <p className='text-xl poppins-regular border-b-2 border-indigo-500 h-fit text-indigo-300 heading'>Follow us</p>
-            <div className="flex gap-4 ml-5 items-center follow-img-box">
-              <a href={links.gitHub}><img src={icons.gitHub2} alt="Github" className='link-img w-12 h-12 hover:scale-102 cursor-pointer' /></a>
-              <a href={links.linkedIn}><img src={icons.linkedIn2} alt="LinkedIn" className='link-img w-10 h-10 hover:scale-102 cursor-pointer' /></a>
-              <a href={links.X}><img src={icons.x} alt="X" className='link-img w-10 h-10 hover:scale-102 cursor-pointer' /></a>
-            </div>
-          </div>
-          
-      </footer>
-      <p className='text-gray-400 poppins-regular text-center mt-5 text-xs copyright'>© 2025 Aravind Dakshan D. All rights reserved. </p>
-
-
-    </div>
-  )
-}
-
-export default Footer
+export default Footer;

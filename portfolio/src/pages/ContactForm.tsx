@@ -1,112 +1,156 @@
-import { useState } from 'react'
-import { images } from '../constants/images'
-import { Bounce, toast, ToastContainer } from 'react-toastify'
-import '../utils/Contact.css'
+import { useState } from "react";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 const ContactForm = () => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [text, setText] = useState('')
-  
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     if (!name || !email || !text) {
-      toast.error('Please fill in all fields');
+      toast.error("Please fill in all fields");
       return;
     }
 
-    const formData = {
-      name,
-      email,
-      text,
-    };
-
     try {
-      const response = await fetch('https://formspree.io/f/manjbwnl', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/manjbwnl", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ name, email, text }),
       });
 
       if (response.ok) {
-        toast.success("Message sent successfully! 🚀 Thanks for contacting us, we'll get back to you soon 😇");
-        setName('');
-        setEmail('');
-        setText('');
+        toast.success(
+          "Message sent successfully! 🚀 I’ll get back to you soon."
+        );
+        setName("");
+        setEmail("");
+        setText("");
       } else {
-        toast.error("Oops! Something went wrong.");
+        toast.error("Something went wrong. Please try again.");
       }
-    } catch (error) {
+    } catch {
       toast.error("Network error. Please try again.");
     }
   };
 
-
   return (
-    <div id='contact' className='text-white p-4 mt-5 mb-10'>
-      <h1 className='ml-150 text-5xl share-tech-bold underline text-indigo-300'>Contact Me</h1>
-      <div className="contact-container flex gap-15 mt-10 justify-center">
-        <img src={images.contact} alt="ContactImg" className='w-120 rounded-xl shadow-2xl shadow-indigo-400' />
-        <form onSubmit={handleSubmit}
-          className='flex flex-col p-2 gap-7'
+    <section
+      id="contact"
+      className="relative bg-gradient-to-b from-black via-blue-950/40 to-black
+                 text-white py-32 px-6"
+    >
+      <div className="max-w-5xl mx-auto">
+
+        {/* HEADER */}
+        <div className="relative text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl font-bold text-blue-400 relative z-10">
+            Contact Me
+          </h2>
+
+          <div
+            className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto
+                       w-48 h-10 bg-blue-600/20 blur-2xl rounded-full"
+          />
+
+          <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
+            Have a question, opportunity, or just want to connect?
+            Feel free to drop a message.
+          </p>
+        </div>
+
+        {/* FORM CARD */}
+        <div
+          className="max-w-2xl mx-auto rounded-3xl border border-blue-800/40
+                     bg-blue-900/10 p-8 sm:p-10
+                     hover:bg-blue-900/20 transition"
         >
+          <form onSubmit={handleSubmit} className="space-y-6">
 
-          {/* Name */}
-          <div className="box-1 box flex flex-col mt-5 text-indigo-100">
-            <label htmlFor="name" className='text-xl poppins-regular'>Name:</label>
-            <input type="text" name="name" value={name}
-              placeholder='Enter your name' required
-              className='bg-blue-600/30 p-2 w-110 mt-4 rounded-xl ml-3 pl-4'
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
+            {/* NAME */}
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-2">
+                Name
+              </label>
+              <input
+                type="text"
+                placeholder="Your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="w-full rounded-xl bg-black/60 border border-blue-700/40
+                           px-4 py-3 text-gray-200 placeholder-gray-500
+                           focus:outline-none focus:border-blue-400 transition"
+              />
+            </div>
 
-          {/* Email */}
-          <div className="box flex flex-col text-indigo-100">
-            <label htmlFor="email" className='text-xl poppins-regular'>Email:</label>
-            <input type="email" name='email'
-              placeholder='Enter your email' required value={email}
-              className='bg-blue-600/30 p-2 w-110 mt-4 rounded-xl ml-3 pl-4'
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
+            {/* EMAIL */}
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-2">
+                Email
+              </label>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full rounded-xl bg-black/60 border border-blue-700/40
+                           px-4 py-3 text-gray-200 placeholder-gray-500
+                           focus:outline-none focus:border-blue-400 transition"
+              />
+            </div>
 
-          {/* TextArea */}
-          <div className="box flex flex-col text-indigo-100">
-            <label htmlFor="msg" className='text-xl poppins-regular'>Your Message:</label>
-            <textarea name="msg" id=""
-              placeholder='Enter your message' required value={text}
-              className='bg-blue-600/30 p-2 w-110 mt-4 rounded-xl ml-3 h-20 pl-4'
-              onChange={(e) => setText(e.target.value)}
-            ></textarea>
-          </div>
+            {/* MESSAGE */}
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-2">
+                Message
+              </label>
+              <textarea
+                rows={4}
+                placeholder="Write your message here..."
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                className="w-full rounded-xl bg-black/60 border border-blue-700/40
+                           px-4 py-3 text-gray-200 placeholder-gray-500
+                           focus:outline-none focus:border-blue-400 transition resize-none"
+              />
+            </div>
 
-          {/* submit btn */}
-          <div className="flex justify-center">
-            <button type='submit' className='cursor-pointer text-center bg-blue-700/80 hover:bg-blue-800/80 transition-all delay-75 duration-200 w-40 text-xl rounded-2xl py-2 font-mono'>Send</button>
-          </div>
-        </form>
+            {/* SUBMIT */}
+            <div className="pt-4 text-center">
+              <button
+                type="submit"
+                className="px-10 py-3 rounded-xl font-semibold
+                           bg-blue-600 hover:bg-blue-700
+                           transition shadow-lg shadow-blue-600/30"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+
+        {/* FOOTER LINE */}
+        <div className="mt-20 text-center">
+          <p className="text-gray-400 text-lg">
+            Looking forward to connecting with you.
+          </p>
+        </div>
+
+        {/* TOAST */}
         <ToastContainer
           position="bottom-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick={false}
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
+          autoClose={4000}
           theme="dark"
           transition={Bounce}
-           />
+        />
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default ContactForm
+export default ContactForm;

@@ -1,32 +1,92 @@
-import { images } from '../constants/images';
-import '../utils/Achievements.css'
+import AutoSlider from "../components/AutoSlider";
+import { images } from "../constants/images";
 
 const Achievements = () => {
   return (
-    <div id='achievements' className='text-white mt-25 bg-blue-500/20 pt-20 pb-18'>
-      <div className="achievements-container ml-20">
-        <h1 className='text-5xl poppins-bold mb-8 underline text-indigo-200'>Achievements</h1>
+    <section
+      id="achievements"
+      className="relative bg-gradient-to-b from-black via-blue-950/40 to-black
+                 text-white py-32 px-6"
+    >
+      <div className="max-w-7xl mx-auto">
 
-        {/* Image Slider */}
-        <div className="slider-container ml-8 relative w-[600px] h-[350px] overflow-hidden mt-12 rounded-md border-3 border-indigo-300">
-          <div className="slider-box flex animate-slide w-[1800px] h-full">
-            <img src={images.hack1} alt="Hackathon 1" className="w-[600px] h-[350px] object-cover" />
-            <img src={images.hack2} alt="Hackathon 2" className="w-[600px] h-[350px] object-cover" />
-            <img src={images.hack3} alt="Hackathon 3" className="w-[600px] h-[350px] object-cover" />
+        {/* HEADER */}
+        <div className="relative text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl font-bold text-blue-400 relative z-10">
+            Achievements & Activities
+          </h2>
+
+          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto
+                          w-56 h-10 bg-blue-600/20 blur-2xl rounded-full" />
+
+          <p className="mt-6 text-gray-400 max-w-3xl mx-auto">
+            Hackathons, competitions, and knowledge-sharing experiences.
+          </p>
+        </div>
+
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
+
+          {/* HACKATHON */}
+          <div className="rounded-3xl border border-blue-800/40 bg-blue-900/10
+                          p-6 sm:p-8 hover:bg-blue-900/20 transition">
+            <AutoSlider
+              images={[
+                images.hack1,
+                images.hack2,
+                images.hack3,
+              ]}
+            />
+
+            <h3 className="text-xl font-semibold text-blue-400 mt-6">
+              Runner-up – GCEM Hacks 2025
+            </h3>
+
+            <p className="text-sm text-blue-300 mt-1">
+              24-hour National-Level Hackathon
+            </p>
+
+            <p className="text-gray-300 mt-4">
+              Secured 2nd place among 20+ teams as part of <b>Team Runtime Terrors</b>.
+              Built <b>FitCommunity</b>, focusing on front-end development and UI logic.
+            </p>
+          </div>
+
+          {/* WORKSHOP */}
+          <div className="rounded-3xl border border-blue-800/40 bg-blue-900/10
+                          p-6 sm:p-8 hover:bg-blue-900/20 transition">
+            <AutoSlider
+              images={[
+                images.workshop1,
+                images.workshop2,
+                images.workshop3,
+                images.workshop4,
+              ]}
+            />
+
+            <h3 className="text-xl font-semibold text-blue-400 mt-6">
+              LinkedIn Profile Building Workshop
+            </h3>
+
+            <p className="text-sm text-blue-300 mt-1">
+              GCEM CSE Club – TECHEON | Aug 2025
+            </p>
+
+            <p className="text-gray-300 mt-4">
+              Conducted a session for juniors on building a strong LinkedIn profile,
+              showcasing projects, networking effectively, and personal branding.
+            </p>
           </div>
         </div>
 
-        {/* Achievement Details */}
-        <div className="details ml-5 w-[600px] mt-6 p-4 border-l-4 border-blue-500">
-          <h2 className="text-2xl font-semibold text-indigo-100">Runner-up – GCEM Hacks 2025</h2>
-          <p className="mt-2 text-[18px] text-gray-300">
-            Developed <strong>FitCommunity</strong>, a fitness community-driven app that encourages healthy habits
-            through social challenges and progress tracking. Worked in a team of 3 (<span className='font-bold'>Team - Runtime Terrors</span>) and secured 2nd place among 20+ teams.
-            My role focused on front-end development.
+        {/* FOOTER LINE */}
+        <div className="mt-20 text-center">
+          <p className="text-gray-400 text-lg">
+            Competing, sharing knowledge, and growing beyond the classroom.
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
