@@ -74,19 +74,19 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
-                title: "💻 Full Stack",
+                title: "Full Stack",
                 desc: "End-to-end web apps with MongoDB, Express, React & Node.js",
               },
               {
-                title: "📱 Mobile Apps",
+                title: "Mobile Apps",
                 desc: "Cross-platform mobile apps using React Native",
               },
               {
-                title: "🛡️ Cybersecurity",
+                title: "Cybersecurity",
                 desc: "Learning networks, attacks, and secure development",
               },
               {
-                title: "🧠 Problem Solving",
+                title: "Problem Solving",
                 desc: "Strong DSA & logical thinking using Java",
               },
             ].map((item) => (

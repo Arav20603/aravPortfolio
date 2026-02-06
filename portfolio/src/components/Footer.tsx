@@ -117,7 +117,7 @@ const Footer = () => {
           </p>
 
           <p className="opacity-70">
-            Built with ❤️ using React & Tailwind CSS
+            Built to showcase my interests.
           </p>
         </div>
       </div>
