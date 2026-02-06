@@ -18,7 +18,7 @@ const About = () => {
                           w-48 h-10 bg-blue-600/20 blur-2xl rounded-full" />
 
           <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
-            A quick snapshot of who I am, what I build, and what excites me.
+            A quick snapshot of who I am, what I secure, and what excites me.
           </p>
         </div>
 
@@ -39,15 +39,19 @@ const About = () => {
               student at{" "}
               <span className="text-blue-300 font-semibold">
                 Gopalan College of Engineering & Management
+              </span>{" "}
+              and a{" "}
+              <span className="text-blue-400 font-semibold">
+                Cybersecurity Intern at The CyberDiplomat
               </span>.
             </p>
 
             <p>
-              I build{" "}
+              I work at the intersection of{" "}
               <span className="text-blue-400 font-semibold">
-                clean, scalable applications
+                secure systems
               </span>{" "}
-              using the{" "}
+              and application development using the{" "}
               <span className="text-blue-400 font-semibold">
                 MERN stack
               </span>{" "}
@@ -58,15 +62,15 @@ const About = () => {
             </p>
 
             <p>
-              I’m actively exploring{" "}
+              I’m focused on{" "}
               <span className="text-blue-400 font-semibold">
                 Cybersecurity
-              </span>{" "}
-              to understand vulnerabilities, networks, and secure system design.
+              </span>{""}
+              , understanding vulnerabilities, networks, and defensive design.
             </p>
 
             <p className="italic text-gray-400">
-              I enjoy solving problems and continuously improving my craft.
+              I enjoy problem-solving and strengthening systems from the inside out.
             </p>
           </div>
 
@@ -74,20 +78,20 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
-                title: "Full Stack",
-                desc: "End-to-end web apps with MongoDB, Express, React & Node.js",
-              },
-              {
-                title: "Mobile Apps",
-                desc: "Cross-platform mobile apps using React Native",
-              },
-              {
                 title: "Cybersecurity",
-                desc: "Learning networks, attacks, and secure development",
+                desc: "Foundations of security, networks, and vulnerability analysis",
+              },
+              {
+                title: "Secure Development",
+                desc: "Building applications with security-first thinking",
+              },
+              {
+                title: "Full Stack",
+                desc: "Web & mobile development using MERN and React Native",
               },
               {
                 title: "Problem Solving",
-                desc: "Strong DSA & logical thinking using Java",
+                desc: "Logical thinking, DSA, and Java-based problem solving",
               },
             ].map((item) => (
               <div
@@ -110,7 +114,7 @@ const About = () => {
         {/* FOOTER LINE */}
         <div className="mt-20 text-center">
           <p className="text-gray-400 text-lg">
-            Always learning. Always building. Always improving.
+            Always learning. Always securing. Always improving.
           </p>
         </div>
       </div>

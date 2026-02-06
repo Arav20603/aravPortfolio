@@ -17,14 +17,14 @@ const skills = {
   "Mobile Development": [
     "React Native",
   ],
-  "Cybersecurity Fundamentals": [
-    "Networking Basics",
-    "Linux Fundamentals",
-    "TCP/IP & Subnetting",
-    "Ports & Protocols",
-    "Basic Vulnerabilities",
-    "Nmap (Beginner)",
-  ],
+  "Cybersecurity": [
+  "Networking & System Basics",
+    "Linux Environment & CLI",
+    "TCP/IP, Subnetting, Ports & Protocols",
+    "Vulnerability Awareness",
+    "Cybersecurity Research & Analysis",
+    "Basic Recon & Scanning (Nmap)",
+],
   "Tools & Practices": [
     "Git & GitHub",
     "REST APIs",

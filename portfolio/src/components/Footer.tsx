@@ -24,8 +24,7 @@ const Footer = () => {
             </div>
 
             <p className="text-sm text-blue-300 leading-relaxed max-w-sm">
-              Final Year CSE Student passionate about building clean,
-              scalable, and user-friendly web and mobile applications.
+              Final Year CSE student with a growing interest in cybersecurity.
             </p>
 
             <div className="text-sm text-blue-400 space-y-1">
@@ -117,7 +116,7 @@ const Footer = () => {
           </p>
 
           <p className="opacity-70">
-            Built to showcase my interests.
+            Exploring Cybersecurity.
           </p>
         </div>
       </div>

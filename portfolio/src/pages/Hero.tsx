@@ -33,12 +33,13 @@ const Hero = () => {
             <p className="text-gray-400 max-w-xl mx-auto md:mx-0">
               I’m a{" "}
               <span className="text-blue-400 font-semibold">
-                Full Stack Developer
+                Cybersecurity Intern
               </span>{" "}
-              working with MERN & React Native, with a strong interest in{" "}
+              with a strong foundation in secure systems, also experienced in{" "}
               <span className="text-blue-400 font-semibold">
-                Cybersecurity
-              </span>.
+                Full Stack Development
+              </span>{" "}
+              using MERN & React Native.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
