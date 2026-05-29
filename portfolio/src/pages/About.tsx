@@ -13,12 +13,13 @@ const About = () => {
             About Me
           </h2>
 
-          {/* Accent Glow */}
-          <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto
-                          w-48 h-10 bg-blue-600/20 blur-2xl rounded-full" />
+          <div
+            className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto
+                       w-48 h-10 bg-blue-600/20 blur-2xl rounded-full"
+          />
 
           <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
-            A quick snapshot of who I am, what I secure, and what excites me.
+            A quick snapshot of who I am, what I build, and what drives me.
           </p>
         </div>
 
@@ -32,45 +33,52 @@ const About = () => {
               <span className="text-blue-400 font-semibold">
                 Aravind Dakshan D
               </span>
-              , a final-year{" "}
+              , a{" "}
               <span className="text-blue-400 font-semibold">
-                Computer Science Engineering
+                Computer Science Engineering Graduate
               </span>{" "}
-              student at{" "}
+              from{" "}
               <span className="text-blue-300 font-semibold">
                 Gopalan College of Engineering & Management
-              </span>{" "}
-              and a{" "}
-              <span className="text-blue-400 font-semibold">
-                Cybersecurity Intern at The CyberDiplomat
-              </span>.
+              </span>
+              .
             </p>
 
             <p>
-              I work at the intersection of{" "}
+              I specialize in{" "}
               <span className="text-blue-400 font-semibold">
-                secure systems
+                Full-Stack Development
               </span>{" "}
-              and application development using the{" "}
+              and{" "}
               <span className="text-blue-400 font-semibold">
-                MERN stack
+                Mobile Application Development
+              </span>
+              , building scalable applications using the{" "}
+              <span className="text-blue-400 font-semibold">
+                MERN Stack
               </span>{" "}
               and{" "}
               <span className="text-blue-400 font-semibold">
                 React Native
-              </span>.
+              </span>
+              .
             </p>
 
             <p>
-              I’m focused on{" "}
-              <span className="text-blue-400 font-semibold">
-                Cybersecurity
-              </span>{""}
-              , understanding vulnerabilities, networks, and defensive design.
+              My interests include software engineering, backend systems,
+              REST API development, real-time applications, and creating
+              intuitive user experiences that solve real-world problems.
+            </p>
+
+            <p>
+              I also possess foundational knowledge of networking and
+              cybersecurity concepts, helping me develop applications with
+              reliability and best practices in mind.
             </p>
 
             <p className="italic text-gray-400">
-              I enjoy problem-solving and strengthening systems from the inside out.
+              Passionate about building impactful products, learning new
+              technologies, and continuously improving as an engineer.
             </p>
           </div>
 
@@ -78,20 +86,20 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
-                title: "Cybersecurity",
-                desc: "Foundations of security, networks, and vulnerability analysis",
+                title: "Full Stack Development",
+                desc: "Building scalable web applications using MERN Stack technologies",
               },
               {
-                title: "Secure Development",
-                desc: "Building applications with security-first thinking",
+                title: "Mobile Development",
+                desc: "Creating cross-platform mobile apps with React Native",
               },
               {
-                title: "Full Stack",
-                desc: "Web & mobile development using MERN and React Native",
+                title: "Software Engineering",
+                desc: "Designing clean, efficient, and maintainable software solutions",
               },
               {
                 title: "Problem Solving",
-                desc: "Logical thinking, DSA, and Java-based problem solving",
+                desc: "Strong foundation in DSA, OOP, and logical thinking",
               },
             ].map((item) => (
               <div
@@ -111,10 +119,10 @@ const About = () => {
           </div>
         </div>
 
-        {/* FOOTER LINE */}
+        {/* FOOTER */}
         <div className="mt-20 text-center">
           <p className="text-gray-400 text-lg">
-            Always learning. Always securing. Always improving.
+            Always learning. Always building. Always improving.
           </p>
         </div>
       </div>

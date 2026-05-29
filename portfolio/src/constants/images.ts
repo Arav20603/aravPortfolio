@@ -18,6 +18,9 @@ import workshop1 from '../assets/images/workshop1.jpeg';
 import workshop2 from '../assets/images/workshop2.jpeg';
 import workshop3 from '../assets/images/workshop3.jpeg';
 import workshop4 from '../assets/images/workshop4.jpeg';
+import ieeeExplore from "../assets/images/ieeeExplore.jpg";
+import ieeePublication from "../assets/images/ieeePublication.jpg";
+import participation from "../assets/images/participation.jpg";
 
 export const images = {
   logo,
@@ -40,4 +43,7 @@ export const images = {
   workshop2,
   workshop3,
   workshop4,
+  ieeePublication,
+  ieeeExplore,
+  participation,
 };

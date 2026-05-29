@@ -9,7 +9,7 @@ export const links = {
   dynamic: 'https://github.com/Arav20603/Dynamic-Webpage-Builder.git',
   dynamicLive: 'https://dynamic-webpage-frontend.onrender.com',
   gitHub: 'https://www.github.com/Arav20603',
-  linkedIn: 'https://www.linkedin.com/in/aravind-dakshan-d-ab117a2a3/',
+  linkedIn: 'https://www.linkedin.com/in/aravind-dakshan-d/',
   X: 'https://x.com/Syndicate0ne/',
-  CV: 'https://drive.google.com/file/d/18tAysBYcn2UIG9a73KxfIznlcLpRqFh2/view?usp=sharing'
+  CV: 'https://drive.google.com/file/d/1aHAM0eaVLxhpFyOxdft088K_FMXf0xmo/view?usp=drive_link'
 }

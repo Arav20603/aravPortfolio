@@ -1,10 +1,11 @@
 const skills = {
-  "Programming": [
+  "Programming Languages": [
     "Java",
+    "JavaScript",
     "Python",
     "C / C++",
-    "Data Structures & Algorithms",
   ],
+
   "Web Development": [
     "HTML",
     "CSS",
@@ -13,25 +14,49 @@ const skills = {
     "Node.js",
     "Express.js",
     "MongoDB",
+    "REST APIs",
+    "Socket.IO",
   ],
+
   "Mobile Development": [
     "React Native",
   ],
-  "Cybersecurity": [
-  "Networking & System Basics",
-    "Linux Environment & CLI",
-    "TCP/IP, Subnetting, Ports & Protocols",
-    "Vulnerability Awareness",
-    "Cybersecurity Research & Analysis",
-    "Basic Recon & Scanning (Nmap)",
-],
-  "Tools & Practices": [
-    "Git & GitHub",
-    "REST APIs",
+
+  "Frameworks & Technologies": [
+    "MERN Stack",
+    "Flask",
+    "Django",
+    "Firebase",
+  ],
+
+  "Databases": [
+    "MongoDB",
+    "MySQL",
+    "Firebase",
+    "SQLite",
+  ],
+
+  "Core Computer Science": [
+    "Data Structures & Algorithms",
+    "Object-Oriented Programming",
+    "Problem Solving",
+  ],
+
+  "Tools & Platforms": [
+    "Git",
+    "GitHub",
     "Postman",
     "VS Code",
   ],
+
+  "Networking & Security": [
+    "Networking Fundamentals",
+    "Linux Environment",
+    "TCP/IP Basics",
+    "Cybersecurity Concepts",
+  ],
 };
+
 
 const Skills = () => {
   return (
@@ -53,7 +78,7 @@ const Skills = () => {
                           w-40 h-10 bg-blue-600/20 blur-2xl rounded-full" />
 
           <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
-            Technologies and concepts I’ve worked with and continue to improve.
+            Technologies, frameworks, and tools I use to build scalable web and mobile applications.
           </p>
         </div>
 
@@ -93,7 +118,7 @@ const Skills = () => {
         {/* FOOTER LINE */}
         <div className="mt-20 text-center">
           <p className="text-gray-400 text-lg">
-            Focused on strong fundamentals, clean code, and continuous learning.
+            Passionate about software engineering, problem solving, and building impactful applications.
           </p>
         </div>
       </div>

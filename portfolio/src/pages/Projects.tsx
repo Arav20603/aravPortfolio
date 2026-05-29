@@ -5,7 +5,7 @@ const projects = [
     title: "RideEase",
     subtitle: "Multi-modal Ride Booking Platform",
     description:
-      "A smart ride booking system that allows users to plan journeys using multiple ride segments like Cab, Auto, Bike, and Metro.",
+      "Multi-modal ride booking platform enabling users to plan and manage journeys across cab, auto, bike, and metro services within a single workflow.",
     tech: ["React Native", "Expo", "Node.js", "Express", "MongoDB"],
     links: [
       { label: "User App", url: links.rideEaseUser },
@@ -18,7 +18,7 @@ const projects = [
     title: "FitCommunity",
     subtitle: "Fitness Progress Tracker",
     description:
-      "Track workouts, monitor fitness progress, and stay consistent with personalized routines.",
+      "Community-driven fitness application for tracking workouts, monitoring progress, participating in challenges, and engaging with fitness-focused groups.",
     tech: ["React Native", "Firebase"],
     links: [{ label: "GitHub", url: links.fitness }],
   },
@@ -26,7 +26,7 @@ const projects = [
     title: "Referral System",
     subtitle: "MERN Stack Application",
     description:
-      "Built a complete referral system with authentication, unique referral codes, and MongoDB integration.",
+      "Full-stack referral management system featuring user authentication, unique referral tracking, and database-driven reward workflows.",
     tech: ["MongoDB", "Express", "React", "Node.js"],
     links: [{ label: "GitHub", url: links.referral }, { label: 'Live Demo', url: links.referralLive }],
   },
@@ -34,7 +34,7 @@ const projects = [
     title: "Dynamic Web Page Builder",
     subtitle: "JSON-Driven Page Generator",
     description:
-      "A scalable web page builder that dynamically generates pages using JSON configurations and APIs.",
+      "Dynamic web page generation platform that creates configurable user interfaces from JSON schemas and API-driven content.",
     tech: ["Next.js", "Node.js", "MongoDB"],
     links: [{ label: "GitHub", url: links.dynamic }, { label: 'Live Demo', url: links.dynamicLive }],
   },
@@ -60,7 +60,7 @@ const Projects = () => {
                           w-44 h-10 bg-blue-600/20 blur-2xl rounded-full" />
 
           <p className="mt-6 text-gray-400 max-w-2xl mx-auto">
-            A selection of projects showcasing my development skills and interests.
+            A showcase of web and mobile applications built using modern full-stack technologies.
           </p>
         </div>
 
@@ -140,7 +140,7 @@ const Projects = () => {
         {/* FOOTER LINE */}
         <div className="mt-20 text-center">
           <p className="text-gray-400 text-lg">
-            More projects coming as I continue learning and building.
+            Focused on building scalable applications and continuously improving as a software engineer.
           </p>
         </div>
       </div>
